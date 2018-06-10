@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ResultActivity">
+
+    <ImageView
+        android:id="@+id/ivEmoji"
+        android:layout_width="187dp"
+        android:layout_height="185dp"
+
+        android:layout_below="@+id/ScoreTV"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/happy" />
+
+    <TextView
+        android:id="@+id/ScoreTV"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Score: 3"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp"
+        android:numStars="5"
+        android:rating="2"
+        android:stepSize="1"
+
+        />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="134dp"
+
+
+        android:text="Rate this app!"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+    />
+
+
+</RelativeLayout>

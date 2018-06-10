@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuizActivity"
+
+    android:padding="6dp"
+    >
+
+    <TextView
+        android:id="@+id/textViewScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#000"
+        android:textSize="20sp"
+
+        />
+    <TextView
+        android:id="@+id/textView_question_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Question :1/x"
+        android:textColor="#000"
+        android:layout_below="@+id/textViewScore"
+        android:textSize="20sp"
+
+        />
+
+    <TextView
+        android:id="@+id/textView_countDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="13dp"
+        android:text="00:30"
+        android:textColor="#000"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/textViewQuestion"
+        android:layout_width="378dp"
+        android:layout_height="111dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="105dp"
+        android:text="There will be the question\n
+       "
+        android:textAlignment="viewStart"
+        android:textColor="#000"
+        android:textSize="28sp" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true">
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1 jesgjjhreg"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="16dp" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textSize="16dp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+
+        android:layout_below="@+id/rg"
+        android:text="Next" />
+
+    <ImageView
+        android:layout_width="108dp"
+        android:layout_height="68dp"
+        android:layout_alignBottom="@+id/textView_countDown"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pt" />
+
+
+</RelativeLayout>
